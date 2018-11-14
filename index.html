@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Legiscomex</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+
+
+
+
+	<!-- Add Button helper (this is optional) -->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+	
+			$('.fancybox').fancybox();
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+
+		});
+	</script>
+	<style type="text/css">
+
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+
+	</style>
+</head>
+
+</head>
+<body>
+	
+		<header>
+			<div class="row ml-0"  id="header">
+				<div class="col-sm-12 col-md-4">
+					<img src="img/logo-header.jpg" class="logo-header">
+				</div>
+				<div class="col-md-8 pr-0 image-header"></div>
+			</div>
+		</header>
+		<section>
+			<!--<nav>
+				<ul class="menu animated">
+					<li class="boton-li"><a href="#" class="boton-a" style="background-color: #ad66ca; color:#fff;"><i class="icono-awesome fas fa-sitemap"></i> <br>Proceso Aduanero de importación</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Orden de pedido</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Registro o licencia</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Manifiesto de carga</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Factura comercial</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Lista de empaque</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>BL</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Carta Porte</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Gia Áerea</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Documento Consiliador</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Cetificacion de fletes</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Poder Especial Aduanero</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Declaracion Andina de valor</a></li>
+				</ul>
+				<ul class="menu2 animated">
+					<li class="boton-li"><a href="#" class="boton-a" style="background-color: #ad66ca; color:#fff;"><i class="icono-awesome fas fa-sitemap"></i> <br>Proceso Aduanero de Exportación</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Poder Especial Aduanero</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Factura Comercial</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Lista de Empaque</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Solicitad Autorización de Embarque</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Traslado de Mercancías</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Documento Consolidador</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Declaración de Exportación</a></li>
+				</ul>
+				<ul class="menu3 animated">
+					<li class="boton-li"><a href="#" class="boton-a" style="background-color: #ad66ca; color:#fff;"><i class="icono-awesome fas fa-sitemap"></i> <br>Proceso Aduanero de Tránsito</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Declaración de Tránsito</a></li>
+					<li class="boton-li"><a href="#" class="boton-a"><i class="icono-awesome fab fa-wpforms"></i> <br>Continuación de Viaje</a></li>
+				</ul>
+			</nav>-->
+		</section>
+		<section>
+			<div class="container container-responsive">
+				<div class="row">
+					<div class="col-sm-12  col-md-6 padre">
+						<div class="hijo esconder-desktop">
+							<h1 class="titulo">SIMULADOR DE FORMULARIOS Y DOCUMENTOS</h1>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 padding-responsive">
+						<div class="hijo esconder-desktop">
+							<h1 class="titulo">SIMULADOR DE FORMULARIOS Y DOCUMENTOS</h1>
+						</div>
+						<div class="contenedor_principal">
+							<nav>
+								<ul class="menu animated">
+									<li class="boton-li"><a href="https://www.legiscomex.com/Documento/PROCESOS_IMPORTACIONES/INDEX" class="boton-a" style="background-color: #ad66ca; color:#fff;" target="blank"><i class="icono-awesome fas fa-sitemap"></i> <br>Proceso Aduanero de importación</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=9358177f-bc5a-412b-a5a6-8eb5c7c367ff&TipoFormulario=&Formulario=45" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Orden de pedido</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=a1d7e40a-11df-4468-962a-7e1a0efed492&TipoFormulario=&Formulario=18" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Registro o licencia</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=eebd4d42-eef0-4469-993c-18b58cb4b506&TipoFormulario=&Formulario=33" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Manifiesto de carga</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=b53a953d-f1c0-4418-93c9-6ff9c04e9735&TipoFormulario=&Formulario=47" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Factura comercial</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=64698fea-6c7b-47eb-b11a-a129f58e62c0&TipoFormulario=&Formulario=27" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Lista de empaque</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=22a9210e-7e77-4b04-bc41-cb162548e780&TipoFormulario=&Formulario=42" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>BL</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=b3f41bfb-a6af-4315-a369-966b8236e937&TipoFormulario=&Formulario=46" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Carta Porte</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=4004fdd4-5241-467a-8ec8-816b6e62dcd1&TipoFormulario=&Formulario=54" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Gia Áerea</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=26ec4d94-3b44-45a1-a8db-77dd2343a463&TipoFormulario=&Formulario=56" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Documento Consiliador</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=4e1f78a5-fece-4276-805d-35f49f7d0826&TipoFormulario=&Formulario=44" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Cetificacion de fletes</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=660d3e32-a24c-461b-9bd0-1c8b26c691ea&TipoFormulario=&Formulario=4" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Poder Especial Aduanero</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=4ebc4d59-92e0-45fb-b22e-f00c8efe012c&TipoFormulario=&Formulario=7" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Declaracion Andina de valor</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=a97b615d-3301-431a-8a56-84688ac467c0&TipoFormulario=&Formulario=5" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Declaración de Importación</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=b22c0adf-ffb2-4985-8183-0589974d3f47&TipoFormulario=&Formulario=37" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Recibo Oficinas de Pago de Tributos Aduanero y Sanciones Cambiarias</a></li>
+
+								</ul>
+								<ul class="menu2 animated">
+									<li class="boton-li"><a href="https://www.legiscomex.com/Documento/MAPA-PROCESOS-EXPO/INDEX" class="boton-a" style="background-color: #ad66ca; color:#fff;" target="blank"><i class="icono-awesome fas fa-sitemap"></i> <br>Proceso Aduanero de Exportación</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=303fc86e-c2fe-4dcf-b317-7350f7518e14&TipoFormulario=&Formulario=4" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Poder Especial Aduanero</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=49056f10-9da9-4fc3-9e20-0caf6eea1c16&TipoFormulario=&Formulario=47" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Factura Comercial</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=10bfd16b-7075-4aae-8694-cdb112da2ec0&TipoFormulario=&Formulario=27" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Lista de Empaque</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=6e546af1-2b75-418f-9553-15cc9a6c3565&TipoFormulario=&Formulario=31" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Solicitad Autorización de Embarque</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=8c55c2c2-eeab-4fd8-858d-4ad119e21c48&TipoFormulario=&Formulario=22" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Traslado de Mercancías</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=91eadfe0-d915-40fc-a301-0b64822009bf&TipoFormulario=&Formulario=56" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Documento Consolidador</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=8d12216c-afce-44f5-94a1-adfff3f78e21&TipoFormulario=&Formulario=6" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Declaración de Exportación</a></li>
+								</ul>
+
+								<ul class="menu3 animated">
+									<li class="boton-li"><a href="https://www.legiscomex.com/Documento/TRANSITO/INDEX" class="boton-a" style="background-color: #ad66ca; color:#fff;" target="blank"><i class="icono-awesome fas fa-sitemap"></i> <br>Proceso Aduanero de Tránsito</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=bcc55116-783a-4179-8e68-33b6e8b95c1c&TipoFormulario=&Formulario=43" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Declaración de Tránsito</a></li>
+
+									<li class="boton-li"><a href="https://www.legiscomex.com/HerramientaClienteWeb/Formas/Formularios_Arancelarios/MenuFormularios/MenuFormulario.aspx?Token=18213f0f-158f-44fc-af4c-818499ff6c4a&TipoFormulario=&Formulario=49" class="boton-a" target="blank"><i class="icono-awesome fab fa-wpforms"></i> <br>Continuación de Viaje</a></li>
+								</ul>
+							</nav>
+							<div class="row  contenedor-1">
+								<h1 class="titulo_1">FORMULARIOS Y PROCESOS</h1>
+								<p class="indicador">* Ingresa, conoce los procesos y diligencia los formularios</p>								
+								<div class="row seccion-formularios">
+									<div class="col-sm-4 col-md-4">
+										<a class="fancybox fancybox.iframe" href="menu1.html" id="menus">
+											<div class="circulo1 expoanimate">
+												<img src="img/icon1.png" class="iconos imagen_cambio1">
+												<p class="titular text1">EXPORTACIÓN</p>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4 col-md-4">
+										<a class="fancybox fancybox.iframe" href="menu2.html" id="menus2">
+											<div class="circulo2 impoanimate">
+												<img src="img/icon2.png" class="iconos imagen_cambio2">
+												<p class="titular text2">IMPORTACIÓN</p>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4 col-md-4">
+										<a class="fancybox fancybox.iframe" href="menu3.html" id="menus3">
+											<div class="circulo3 trasanimate">
+												<img src="img/icon3.png" class="iconos imagen_cambio3">
+												<p class="titular text3">TRANSITO</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="row  contenedor-2">
+								<h1 class="titulo_1 titulo_2">CALCULADORAS</h1>
+								<p class="indicador-2">* Ingresa, conoce los procesos y diligencia los formularios</p>								
+								<div class="row seccion-formularios">
+									<div class="col-sm-4 col-md-4">
+										<div class="circulo4 circulo-2 cal-expo">
+											<img src="img/calcular1.png" class="iconos iconos2 imagen_cambio4">
+											<p class="titular titular2 text4">Derechos e impuestos</p>
+										</div>
+									</div>
+									<div class="col-sm-4 col-md-4">
+										<div class="circulo5 circulo-2 cal-impo">
+											<img src="img/calcular2.png" class="iconos iconos2 imagen_cambio5">
+											<p class="titular titular2 text5">Medidas</p>
+										</div>
+									</div>
+									<div class="col-sm-4 col-md-4">
+										<div class="circulo6 circulo-2 cal-tran">
+											<img src="img/calcular3.png" class="iconos iconos2 imagen_cambio6">
+											<p class="titular titular2 text6">Divisas</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	
+		<div class="principal-0  animated bounceInLeft">
+			<div class="row contenido_aparte">
+				<div class="col-md-6 pl-0 pr-0 imagen-fondo">
+					<div class="cerrar"><i class="fas fa-times-circle cerrar_intro"></i></div>
+					<img src="img/intro.jpg" width="100%" class="imagen_intro">
+				</div>
+				<div class="col-md-6 pl-0 pr-0">
+					<h2 class="titulo-indicador">BIENVENIDO</h2>
+					<p class="parrafo">Bienvenido al Simulador de formularios y documentos de LEGISCOMEX donde podras realizar una simulación en tiempo real de registro de formularios y calculos de productos.
+					<br><br>
+					Para comenzar ingresa a las opciones de la parte derecha de tu pantalla</p>
+					
+				</div>
+			</div>
+		</div>
+		<div class="principal  animated">
+			<div class="row contenido_aparte">
+				<div class="col-md-6 pl-0 pr-0 imagen-fondo">
+					<img src="img/expof.jpg" width="100%" class="imagen_intro">
+				</div>
+				<div class="col-md-6 pl-0 pr-0">
+					<h2 class="titulo-indicador">Exportación</h2>
+					<p class="parrafo">En economía, las importaciones son el transporte legítimo de bienes y servicios del extranjero, los cuales son adquiridos por un país para distribuirlos en el interior de este. Las importaciones pueden ser cualquier producto o servicio recibido dentro de la frontera de un Estado con propósitos comerciale</p>
+				</div>
+			</div>
+		</div>
+		<div class="principal2 animated">
+			<div class="row contenido_aparte">
+				<div class="col-md-6 pl-0 pr-0 imagen-fondo">
+					<img src="img/impoF.jpg" width="100%" class="imagen_intro">
+				</div>
+				<div class="col-md-6 pl-0 pr-0">
+					<h2 class="titulo-indicador">Importación</h2>
+					<p class="parrafo">En economía, las importaciones son el transporte legítimo de bienes y servicios del extranjero, los cuales son adquiridos por un país para distribuirlos en el interior de este. Las importaciones pueden ser cualquier producto o servicio recibido dentro de la frontera de un Estado con propósitos comerciale</p>
+				</div>
+			</div>
+		</div>
+		<div class="principal3 animated">
+			<div class="row contenido_aparte">
+				<div class="col-md-6 pl-0 pr-0 imagen-fondo">
+					<img src="img/tranF.jpg" width="100%" class="imagen_intro">
+				</div>
+				<div class="col-md-6 pl-0 pr-0">
+					<h2 class="titulo-indicador">Transito</h2>
+					<p class="parrafo">En economía, las importaciones son el transporte legítimo de bienes y servicios del extranjero, los cuales son adquiridos por un país para distribuirlos en el interior de este. Las importaciones pueden ser cualquier producto o servicio recibido dentro de la frontera de un Estado con propósitos comerciale</p>
+				</div>
+			</div>
+		</div>
+		<!--CALCULADORAS-->
+		<div class="principal4  animated">
+			<div class="row contenido_aparte">
+				<div class="col-md-6 pl-0 pr-0 imagen-fondo">
+					<img src="img/calcular1.jpg" width="100%" class="imagen_intro">
+				</div>
+				<div class="col-md-6 pl-0 pr-0">
+					<h2 class="titulo-indicador">Derechos e impuestos a la importacion</h2>
+					<p class="parrafo">En economía, las importaciones son el transporte legítimo de bienes y servicios del extranjero, los cuales son adquiridos por un país para distribuirlos en el interior de este. Las importaciones pueden ser cualquier </p>
+				</div>
+			</div>
+		</div>
+		<div class="principal5 animated">
+			<div class="row contenido_aparte">
+				<div class="col-md-6 pl-0 pr-0 imagen-fondo">
+					<img src="img/calcular2.jpg" width="100%" class="imagen_intro">
+				</div>
+				<div class="col-md-6 pl-0 pr-0">
+					<h2 class="titulo-indicador">Derechos e impuestos a la importacion</h2>
+					<p class="parrafo">En economía, las importaciones son el transporte legítimo de bienes y servicios del extranjero, los cuales son adquiridos por un país para distribuirlos en el interior de este. Las importaciones pueden ser cualquier </p>
+				</div>
+			</div>
+		</div>
+		<div class="principal6 animated">
+			<div class="row contenido_aparte">
+				<div class="col-md-6 pl-0 pr-0 imagen-fondo">
+					<img src="img/calcular3.jpg" width="100%" class="imagen_intro">
+				</div>
+				<div class="col-md-6 pl-0 pr-0">
+					<h2 class="titulo-indicador">Derechos e impuestos a la importacion</h2>
+					<p class="parrafo">En economía, las importaciones son el transporte legítimo de bienes y servicios del extranjero, los cuales son adquiridos por un país para distribuirlos en el interior de este. Las importaciones pueden ser cualquier </p>
+				</div>
+			</div>
+		</div>
+	
+
+
+	<!--<script type="text/javascript" src="js/jquery.js"></script>-->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+
+
+
+		$(".cerrar").click(function(event) {
+
+			$(".principal-0").removeClass('bounceInLeft');
+			$(".principal-0").addClass('bounceOutLeft');
+		});
+
+
+		$(".principal-0").addClass('bounceInLeft');
+		$(".principal-0").css('display', 'block');
+
+
+		if ($(window).width() <= 768) {  
+
+		$("#menus, #menus2, #menus3").click(false);
+
+		$(".principal-0").addClass('bounceInLeft');
+		$(".principal-0").css('display', 'block');
+
+			setTimeout(function(){ 
+			
+				$(".principal-0").removeClass('bounceInLeft');
+				$(".principal-0").addClass('bounceOutLeft');
+
+			}, 4000);
+
+
+		$(".expoanimate").click(function(event) { 
+			
+			$("body").css('background-image', 'url(img/fondo1.jpg');
+
+		});
+			
+		
+
+       }else{ 
+
+       	$("#menus, #menus2, #menus3").click(true);
+
+		$("body").css('background-size', 'cover !important');
+
+		
+
+		$(".expoanimate, .menu").hover(function() {
+				
+				$(".principal").addClass('bounceInLeft');
+				$(".principal").css('display', 'block');
+				$(".text1").css('color', '#662480');
+				$(".imagen_cambio1").attr('src', 'img/icon1M.png');
+			
+
+				$(".principal").removeClass('bounceOutLeft');
+				
+
+				$("body").css('background-image', 'url(img/fondo1.jpg');
+
+				
+				$(".principal-0").removeClass('bounceInLeft');
+				$(".principal-0").addClass('bounceOutLeft');
+
+				$(".menu").css('display', 'block');
+				$(".circulo1").addClass('circulo-hover');
+
+			
+		}, function() {
+
+				$(".principal").addClass('bounceOutLeft');
+				$(".text1").css('color', '#fff');
+				$(".imagen_cambio1").attr('src', 'img/icon1.png');
+				
+			
+				$(".principal").removeClass('bounceInLeft');
+
+
+				$(".principal-0").removeClass('bounceOutLeft');
+				$(".principal-0").addClass('bounceInLeft');  
+				
+		
+				
+				$("body").css('background-image', 'url(img/fondo.jpg');
+
+
+				$(".principal-0").addClass('bounceInLeft');
+				$(".principal-0").css('display', 'block');
+				$(".circulo1").removeClass('circulo-hover');
+				$(".menu").css('display', 'none');
+			
+			
+		});
+
+
+
+		$(".impoanimate, .menu2").hover(function() {
+
+
+				
+				$(".principal2").addClass('bounceInLeft');
+				$(".principal2").css('display', 'block');
+				$(".text2").css('color', '#662480');
+				$(".imagen_cambio2").attr('src', 'img/icon2M.png');
+
+				$(".principal2").removeClass('bounceOutLeft');
+				
+				$(".principal-0").removeClass('bounceInLeft');
+				$(".principal-0").addClass('bounceOutLeft');
+
+
+				$("body").css('background-image', 'url(img/fondo2.jpg');
+				$(".menu2").css('display', 'block');
+				$(".circulo2").addClass('circulo-hover');
+
+		}, function() {
+
+				$(".principal2").addClass('bounceOutLeft');
+				$(".text2").css('color', '#fff');
+				$(".imagen_cambio2").attr('src', 'img/icon2.png');
+			
+			
+				$(".principal2").removeClass('bounceInLeft');
+
+				$(".principal-0").removeClass('bounceOutLeft');
+				$(".principal-0").addClass('bounceInLeft');
+
+				$(".circulo2").removeClass('circulo-hover'); 
+				$(".menu2").css('display', 'none');
+
+
+				$("body").css('background-image', 'url(img/fondo.jpg');
+				
+			
+		});
+
+
+		$(".trasanimate, .menu3").hover(function() {
+				
+				$(".principal3").addClass('bounceInLeft');
+				$(".principal3").css('display', 'block');
+				$(".text3").css('color', '#662480');
+				$(".imagen_cambio3").attr('src', 'img/icon3M.png');
+
+				$(".principal3").removeClass('bounceOutLeft');
+				
+				$(".principal-0").removeClass('bounceInLeft');
+				$(".principal-0").addClass('bounceOutLeft');
+
+				$(".menu3").css('display', 'block');
+				$(".circulo3").addClass('circulo-hover');
+
+
+				$("body").css('background-image', 'url(img/fondo6.jpg');
+
+		}, function() {
+
+				$(".principal3").addClass('bounceOutLeft');
+				$(".text3").css('color', '#fff');
+				$(".imagen_cambio3").attr('src', 'img/icon3.png');
+				
+			
+				$(".principal3").removeClass('bounceInLeft');
+
+			
+				$(".principal-0").removeClass('bounceOutLeft');
+				$(".principal-0").addClass('bounceInLeft');  
+
+				$("body").css('background-image', 'url(img/fondo.jpg');
+
+				$(".circulo3").removeClass('circulo-hover');
+				$(".menu3").css('display', 'none');
+			
+			
+		});
+
+
+
+
+
+
+
+/*------------------------------------------calculadora-------------------------------------------------*/
+
+		$(".cal-expo").hover(function() {
+				
+				$(".principal4").addClass('bounceInLeft');
+				$(".principal4").css('display', 'block');
+				$(".text4").css('color', '#fff');
+				$(".imagen_cambio4").attr('src', 'img/calcular1M.png');
+
+				$(".principal4").removeClass('bounceOutLeft');
+				$(".contenedor-2").css('background-color', '#000000d1');
+
+				$("body").css('background-image', 'url(img/fondo4.jpg');
+				
+				$(".principal-0").removeClass('bounceInLeft');
+				$(".principal-0").addClass('bounceOutLeft');
+
+				$(".circulo4").addClass('circulo-hover2');
+
+					
+
+		}, function() {
+
+				$(".principal4").addClass('bounceOutLeft');
+				$(".text4").css('color', '#662480');
+				$(".imagen_cambio4").attr('src', 'img/calcular1.png');
+			
+			
+				$(".principal4").removeClass('bounceInLeft');
+				
+				$(".principal-0").removeClass('bounceOutLeft');
+				$(".principal-0").addClass('bounceInLeft');  
+
+				$("body").css('background-image', 'url(img/fondo.jpg');
+
+				$(".circulo4").removeClass('circulo-hover2');
+
+			
+			
+			
+		});
+
+		$(".cal-impo").hover(function() {
+				
+				$(".principal5").addClass('bounceInLeft');
+				$(".principal5").css('display', 'block');
+				$(".text5").css('color', '#fff');
+				$(".imagen_cambio5").attr('src', 'img/calcular2M.png');
+
+				$(".principal5").removeClass('bounceOutLeft');
+			
+
+				$("body").css('background-image', 'url(img/fondo5.jpg');
+				
+				$(".principal-0").removeClass('bounceInLeft');
+				$(".principal-0").addClass('bounceOutLeft');
+
+				$(".circulo5").addClass('circulo-hover2');
+
+				
+			
+				
+			
+
+		}, function() {
+
+				$(".principal5").addClass('bounceOutLeft');
+				$(".text5").css('color', '#662480');
+				$(".imagen_cambio5").attr('src', 'img/calcular2.png');
+				
+			
+				$(".principal5").removeClass('bounceInLeft');
+	
+				$(".principal-0").removeClass('bounceOutLeft');
+				$(".principal-0").addClass('bounceInLeft');  
+
+				$("body").css('background-image', 'url(img/fondo.jpg');
+
+				$(".circulo5").removeClass('circulo-hover2');
+
+			
+				
+			
+		});
+
+		$(".cal-tran").hover(function() {
+				
+				$(".principal6").addClass('bounceInLeft');
+				$(".principal6").css('display', 'block');
+				$(".text6").css('color', '#fff');
+				$(".imagen_cambio6").attr('src', 'img/calcular3M.png');
+
+				$(".principal6").removeClass('bounceOutLeft');
+		
+
+				$("body").css('background-image', 'url(img/fondo3.jpg');
+				
+				$(".principal-0").removeClass('bounceInLeft');
+				$(".principal-0").addClass('bounceOutLeft');
+
+				$(".circulo6").addClass('circulo-hover2');
+
+			
+
+			
+				
+			
+
+		}, function() {
+
+				$(".principal6").addClass('bounceOutLeft');
+				$(".text6").css('color', '#662480');
+				$(".imagen_cambio6").attr('src', 'img/calcular3.png');
+			
+			
+				$(".principal6").removeClass('bounceInLeft');
+			
+				$(".principal-0").removeClass('bounceOutLeft');
+				$(".principal-0").addClass('bounceInLeft');  
+
+				$("body").css('background-image', 'url(img/fondo.jpg');
+
+				$(".circulo6").removeClass('circulo-hover2');
+	
+			
+		});
+
+
+	}  
+
+	</script>
+</body>
+</html>
